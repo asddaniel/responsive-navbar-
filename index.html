@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>navbar </title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Template</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#" >Accueil</a></li>
+                <li><a href="#">Galerie</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <img src="images/menu2.png" class="menu-img" alt="">
+    </nav>
+    <header>
+
+    </header>
+    <script>
+        let menu = document.querySelector(".menu-img")
+        let nav_links = document.querySelector(".nav-links")
+        menu.addEventListener("click", ()=>{nav_links.classList.toggle("mobile_menu")
+        })
+    </script>
+</body>
+</html>
